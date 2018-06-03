@@ -147,7 +147,7 @@ There is a good GitHub tutorial in the [GitHub Guides](https://guides.github.com
 
 ## Troubleshooting
 
-![Photo by Hack Capital on Unsplash](/Users/gmarz/Documents/projects/webdev-launchpad/images/hack-capital-568971-unsplash.jpg)
+![Photo by Hack Capital on Unsplash](images/hack-capital-568971-unsplash.jpg)
 
 Finding help for a coding problem is often easy with the large community of software developers that have a created a knowledgebase on the Web. Generally, I search for my issue with Google and find an answer within the first few results. Often the results are from [Stack Overflow](https:://stackoverflow.com),  a forum website for all types of coding languages. 
 
