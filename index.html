@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>README</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<p><img src="images/michal-kubalczyk-505207-unsplash.jpg" alt="Michal Kubalczyk https://unsplash.com/photos/WecngmAT-KY"></p>
+
+<h1 id="toc_0">A Beginner&#39;s Launchpad to Web Development</h1>
+
+<h3 id="toc_1">George Marzloff, MD</h3>
+
+<hr>
+
+<h2 id="toc_2">Introduction</h2>
+
+<p>Welcome to Web Development! It is a fun skill to develop and very manageable to do as a side hobby in your free time. I originally wrote this article to introduce web dev to my colleagues in the medical field who were interested but did not know where to start. This article serves as an orientation into the field, and the real learning is found in the linked tutorials. </p>
+
+<p>First, you will need to download software and skim through tutorials. As you become comfortable with HTML, CSS, and basic Javascript, you can build web apps using libraries and frameworks that take care of the hard parts of user interface. I will also point to ways you can create public open-source projects and collaborate with others to build software as a team.</p>
+
+<h2 id="toc_3">Software</h2>
+
+<p>There is a couple of applications you will need to get started, and they are free: </p>
+
+<ul>
+<li><strong>Text Editor</strong>: I recommend <a href="https://code.visualstudio.com/">Visual Studio Code</a> or <a href="https://atom.io">Atom Text Editor</a></li>
+<li><strong>Web Browser</strong>: <a href="https://www.google.com/chrome/browser/">Google Chrome</a> or <a href="https://support.apple.com/downloads/#safari">Apple&#39;s Safari</a> will work. Both offer nice developer inspectors to &quot;look under the hood&quot; of websites. </li>
+</ul>
+
+<h2 id="toc_4">An Aerial View</h2>
+
+<p><img src="images/luiz-centenaro-424472-unsplash.jpg" alt="Photo by Luiz Centenaro on Unsplash"></p>
+
+<p>Through this overview, I will cover three fundamental technologies used on the Web: <em>HTML</em>, <em>CSS</em>, and <em>Javascript</em>.</p>
+
+<h3 id="toc_5">HTML</h3>
+
+<p>HyperText Markup Language, or HTML, is not code, but rather a way to create structure in content that a machine can understand. While a Word document might provide formatting information, it does not necessarily identify the important headings, normal paragraphs, etc. An HTML document looks like the following: </p>
+
+<div><pre><code class="language-none">&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Title of The Page&lt;/title&gt;
+    &lt;head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;This is a Heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph about something very interesting.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+
+<p>The text content is structured into different parts called elements. There is no information about what the text should like though. Web browsers have a default basic style to present this HTML. Here is what the above looks like in a browser:</p>
+
+<p><img src="images/htmlscreenshot.png" alt=""> </p>
+
+<h3 id="toc_6">CSS</h3>
+
+<p>Cascading Style Sheet, or CSS, is a file type that defines a set of rules for how the content should look. An example file looks like this:</p>
+
+<div><pre><code class="language-none"> h1 { 
+    font-family: Arial;
+    color: blue;
+    text-align: center;
+    font-size: 36pt;
+}
+
+p {
+    color: orange;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14pt;
+}</code></pre></div>
+
+<p>The <code>h1</code> and <code>p</code> style rules define how the text within <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> looks in the html. Here is the same html rendered with style:</p>
+
+<p><img src="images/htmlwithstyle.png" alt=""></p>
+
+<h3 id="toc_7">Javascript</h3>
+
+<p>HTML defines document structure, and CSS defines the look of the content, but there is mostly no ability for interaction (well, CSS has some ways to change styles in response to mouse movements but it is still limited). To create the rich user interfaces and experiences of modern websites, the programming language Javascript is used. All modern browsers support Javascript. Below, I added some Javascript code to tell the browser to make the heading text follow the mouse cursor: </p>
+
+<div><pre><code class="language-none">    &lt;body id=&quot;body&quot;&gt;
+        &lt;h1 id=&quot;heading&quot;&gt;This is a Heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph about something very interesting.&lt;/p&gt;
+        
+        &lt;script language=&quot;javascript&quot;&gt;
+            var heading = document.getElementById(&quot;heading&quot;);
+            var body = document.getElementById(&quot;body&quot;);
+            
+            body.addEventListener(&quot;pointermove&quot;,function(event){
+                moveDiv(event);
+            });
+
+            function moveDiv(event){
+                heading.style.top = event.pageY; // matches the heading top to the cursor&#39;s Y
+                heading.style.left = event.pageX; // matches the heading left to the cursor&#39;s X
+            }
+        &lt;/script&gt;
+    &lt;/body&gt;</code></pre></div>
+
+<p>And the result:</p>
+
+<p><img src="images/heading-moving.gif" alt=""> </p>
+
+<p>This short example offers a sense of what HTML, CSS and Javascript files look like, and now it is time for a more thorough introduction via beginner tutorials.</p>
+
+<h2 id="toc_8">HTML, CSS, and Javascript Tutorials</h2>
+
+<p>Rather than re-invent the wheel with my own tutorials, I recommend that you follow the great free ones of <a href="https://w3schools.org">W3Schools.org</a>. The following steps describe the general process.</p>
+
+<ol>
+<li>Create a folder in My Documents or other central location called <code>projects</code>, or any general name you want. You will put directories of projects in here to keep everything organized. </li>
+<li>Make a new folder within that called <code>introduction</code>. You can use this to work through the tutorials. </li>
+<li>Open your text editor (I will use Visual Studio in the screenshots) and use it to follow the tutorials. You could use the &quot;Try it Yourself&quot; buttons in the W3schools tutorials to load a browser code editor in your browser, but it is better to work with your own files that you can save, link with other files (e.g. CSS, Javascript), and become more comfortable with the text editor. 
+
+<ol>
+<li>At the <a href="https://www.w3schools.com/html/default.asp">first tutorial page</a>, type the code in the example in Visual Studio code. </li>
+<li>Save your file as <code>index.html</code> in your <code>projects/introduction/</code> folder or whatever you named it.</li>
+<li>Drag the file into Chrome or Safari, and a new tab should open rendering that file in the browser.</li>
+<li>You should see parts of the text such as tag names (e.g. <code>&lt;head&gt;</code>) colors change; this is called syntax highlighting and it automatically sets the mode to <code>html</code> because the file&#39;s extension is <code>html</code>. </li>
+<li>Anytime you revise the code, save it (<code>Cmd+S</code> for Mac or <code>Ctrl+S</code> for Win) in the text editor, then refresh (<code>F5</code> or <code>Ctrl+R</code> (windows) or <code>Cmd+R</code> (mac)) in the browser.</li>
+</ol></li>
+</ol>
+
+<p><img src="images/vscode-intro.png" alt="VS Code"></p>
+
+<h2 id="toc_9">Take Your Apps to the Next Level using Frameworks and Libraries</h2>
+
+<p>Beginner tutorials are important to learn fundamentals, but to code a modern web app from scratch would take a lot of time and effort. Instead of trudging that painstaking pathway, you can use existing software to help you. Today, there are many <em>libraries</em> and <em>frameworks</em> (for this article, consider them similar to libraries) that you can include in your app to make development much easier. </p>
+
+<h3 id="toc_10">Framework7</h3>
+
+<p>To re-create the look of iOS or Android apps, you can use <a href="https://framework7.io">Framework7</a>. </p>
+
+<p><img src="images/framework7.png" alt=""></p>
+
+<h3 id="toc_11">jQuery</h3>
+
+<p><a href="https://jquery.com">jQuery</a> is a Javascript library that simplifies code for tasks such as animation, and manipulating a web document live to change text or adjust CSS styles.</p>
+
+<p><img src="images/jquery.png" alt=""></p>
+
+<h2 id="toc_12">Version Control using Git</h2>
+
+<p>Diving into <em>Version Control</em> with Git is something you should probably defer until you are somewhat comfortable with the HTML and CSS tutorials to avoid complicating things. You can read the following introduction about it for a basic understanding of its role in the development process.</p>
+
+<p><em>Version Control</em> is a concept most commonly encountered in the medical research field as Microsoft Word&#39;s Track Changes feature. In this workflow, one user can turn on Track Changes, revise the document, and send it back to someone for review. The recipient can accept or reject changes, but once those decisions are made, the edits becomes part of the document and the records of the changes disappear. If a team wants to keep the record of the changes, a common workaround used is to save a copy of the document with the changes tracked permanently. If another user wants to make edits, the user now has to email around the same file with their updated track changes.  </p>
+
+<p><img src="images/trackchangeson.png" alt=""></p>
+
+<p>This workflow becomes inefficient and unwieldy quickly. Imagine if a team of software developers used the same system, but instead of a single document among two or three people, there are millions of lines of code being edited by dozens to hundreds of engineers. The &quot;Track Changes&quot; approach is simply untenable.</p>
+
+<p>Fortunately, there are more robust approaches to version control. The most popular version control software these days is called Git. The entire codebase of Microsoft Windows (3.5 million files, 300GB of code!) is maintained with Git and discussed on the <a href="https://blogs.msdn.microsoft.com/bharry/2017/05/24/the-largest-git-repo-on-the-planet/">Microsoft Blog</a>. </p>
+
+<p><a href="https://github.com">Github</a> is a popular platform that maintains software projects using Git and facilitates collaboration among teams. A basic overview article is available on <a href="https://www.howtogeek.com/180167/htg-explains-what-is-github-and-what-do-geeks-use-it-for/">HowToGeek</a>. When building any software project, it is a good idea to use version control by hosting it on GitHub (or <a href="https://bitbucket.org/">Bitbucket</a>, a similar service that offers free private repositories).</p>
+
+<p>There is a good GitHub tutorial in the <a href="https://guides.github.com/activities/hello-world/">GitHub Guides</a>. The easiest way to work with a repository is using software with graphical user interfaces: </p>
+
+<ul>
+<li><a href="https://desktop.github.com/">GitHub Desktop</a> available for Mac and Windows. </li>
+<li><a href="https://www.sourcetreeapp.com/">SourceTree</a> is another good free software for repository management. </li>
+</ul>
+
+<h2 id="toc_13">Troubleshooting</h2>
+
+<p><img src="images/hack-capital-568971-unsplash.jpg" alt="Photo by Hack Capital on Unsplash"></p>
+
+<p>Finding help for a coding problem is often easy with the large community of software developers that have a created a knowledgebase on the Web. Generally, I search for my issue with Google and find an answer within the first few results. Often the results are from <a href="https:://stackoverflow.com">Stack Overflow</a>,  a forum website for all types of coding languages. </p>
+
+<p>If your issue is not solved with a quick search, then you could post a question on the StackOverflow forums. <a href="https://www.sitepoint.com/community/c/html-css">SitePoint</a> offers more forums for HTML, CSS, Javascript, and others.  </p>
+
+<p>And feel free to contact me with questions! <a href="mailto:george@marzloffmedia.com">george@marzloffmedia.com</a></p>
+
+<h3 id="toc_14">Happy coding!</h3>
+
+
+
+
+</body>
+
+</html>
